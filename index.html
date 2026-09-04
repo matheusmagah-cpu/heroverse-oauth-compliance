@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Robo youtube — YouTube channel operations</title>
+  <meta name="description" content="Transparent information about Robo youtube and its use of Google YouTube data.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body><main>
+  <nav aria-label="Legal navigation"><a href="index.html">Home</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a></nav>
+  <h1>Robo youtube</h1>
+  <p class="lede">A supervised operations tool used to research, prepare, quality-check and publish original editorial videos to YouTube channels that explicitly authorize access.</p>
+  <section class="panel"><h2>What the application does</h2><p>The application reads the authorized channel’s identity and public metadata, retrieves the channel owner’s aggregate YouTube Analytics data, and can stage an approved video privately, attach its approved thumbnail and caption track, verify the result, and then publish it only after every editorial, technical, rights and publication gate passes. It does not purchase advertising, guarantee monetization, or access channels that have not granted permission.</p></section>
+  <h2>Why Google data is requested</h2>
+  <ul><li><code>youtube.readonly</code>: verify the authorized channel and read channel/video metadata.</li><li><code>yt-analytics.readonly</code>: measure performance of the authorized channel and published videos.</li><li><code>youtube.upload</code>: upload an approved video, thumbnail and metadata on the channel owner’s instruction and within the configured publication policy.</li><li><code>youtube.force-ssl</code>: upload the separately reviewed caption track through <code>captions.insert</code> and change only <code>status.privacyStatus</code> from private to public through <code>videos.update</code> after post-upload gates. Google defines this scope more broadly; this application policy does not use it to delete videos, ratings, comments or captions or to modify unrelated metadata.</li></ul>
+  <h2>Control and supervision</h2><p>The channel owner remains the supervisor. Publication is fail-closed when rights, channel identity, quality, credentials or required review are incomplete. Access can be revoked from the Google Account security settings at any time.</p>
+  <h2>Contact</h2><p>Operator: HeroVerse Operations, administered by the authorized channel operator<br>Support: <a href="mailto:willmarquesfotografia@gmail.com">willmarquesfotografia@gmail.com</a></p>
+  <footer>Effective date: September 3, 2026 · <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a></footer>
+</main></body></html>
